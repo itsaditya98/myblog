@@ -68,6 +68,7 @@ body{
     color: #000;
     text-decoration: none;
     text-transform: capitalize;
+    position: center;
 }
 
 #canvas1 {
