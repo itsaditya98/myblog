@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog : Editor</title>
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+
+  <canvas id="canvas1"></canvas>
+
+  <script src="canvas.js"></script>
+
+  <nav class="navbar">
+    <ul class="links-container">
+        <li class="link-item"><a href="./index.html" class="link">Home</a></li>
+        <li class="link-item"><a href="./blog.html" class="link">Blogs</a></li>
+    </ul>
+  </nav>
+
+  <form id="blogForm">
+
+      <div class="box">
+      <div class="edit-blog">
+          <textarea type="text" id="title" class="title" placeholder="Blog title..."></textarea>
+          <textarea type="text" id="content" class="article" placeholder="Start writing here..."></textarea>
+      </div>
+      </div>
+  
+      <div class="blog-publish">
+          <button type="submit" class="btn dark publish-btn">publish</button>
+      </div>
+
+  </form>
+
+  <script src="editor.js"></script>
+</body>
+</html>
