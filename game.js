@@ -7,6 +7,14 @@ const collisionCtx = collisionCanvas.getContext('2d');
 collisionCanvas.width = window.innerWidth;
 collisionCanvas.height = window.innerHeight;
 
+window.addEventListener("orientationchange", function(e) {
+       if(window.innerHeight > window.innerWidth){
+        hypeDocument.getElementById('landscapeAlert').style.display = "block";
+      }   else if (window.innerHeight < window.innerWidth){
+        hypeDocument.getElementById('landscapeAlert').style.display = "none";
+      }   
+    });
+
 let score = 0;
 let gameOver = false;
 ctx.font = '50px Impact';
