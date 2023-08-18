@@ -1,15 +1,40 @@
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
+#container { display:block; }
+
+@media only screen and (orientation:portrait){
+
+  #container {
+
+   height: 100vw;
+
+   -webkit-transform: rotate(90deg);
+
+   -moz-transform: rotate(90deg);
+
+   -o-transform: rotate(90deg);
+
+   -ms-transform: rotate(90deg);
+
+   transform: rotate(90deg);
+
   }
+
 }
+
+@media only screen and (orientation:landscape){
+
+  #container {
+
+  -webkit-transform: rotate(0deg);
+
+  -moz-transform: rotate(0deg);
+
+  -o-transform: rotate(0deg);
+
+  -ms-transform: rotate(0deg);
+
+  transform: rotate(0deg);
+
+   }
 
 body {
     width : 100vw;
